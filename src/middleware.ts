@@ -21,12 +21,6 @@ export const config = {
  import { withAuth } from "next-auth/middleware"
  
  export default withAuth({
-  // Matches the pages config in `[...nextauth]`
-  // Overrides pages configuration
- /*  pages: {
-    signIn: "/login",
-    error: "/error",
-  }, */
   secret: process.env.AZURE_AD_CLIENT_SECRET
 })
 

@@ -18,14 +18,14 @@ export const config = {
 }
 */
  
- import { withAuth } from "next-auth/middleware"
+import { withAuth } from "next-auth/middleware"
  
  export default withAuth({
   secret: process.env.AZURE_AD_CLIENT_SECRET
 })
 
 export const config = {
-  matcher: ["/dashboard"],
+  matcher: ["/((?!$).*)"],
 }
 
 
